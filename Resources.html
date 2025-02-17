@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>tatendamuchiriri</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo1.webp" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/your-project-id.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+
+ 
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+   <style>
+      
+        /* General Section Styling */
+.video-carousel1 {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+}
+
+.section-title1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.carousel-container1 {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-track1 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide1 {
+    min-width: 300px;
+    margin: 0 10px;
+    flex-shrink: 0;
+}
+
+/* Video Card Styling */
+.video-card1 {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.video-thumbnail1 {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.play-button1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.video-card1:hover .play-button1 {
+    opacity: 1;
+}
+
+.video-details1 {
+    padding: 10px;
+    background: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.video-details1 h3 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    color: #333;
+}
+
+.video-details1 p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Navigation Arrows */
+.carousel-arrow1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.carousel-arrow1:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.prev1 {
+    left: 10px;
+}
+
+.next1 {
+    right: 10px;
+}
+
+/* Navigation Dots */
+.carousel-dots1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dot1 {
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.dot1.active1 {
+    background: #333;
+}
+
+    /* General Section Styling */
+.articles-section2 {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #deb887;
+}
+
+.section-title2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #068067;
+    font-family: 'Pacifico',cursive;
+    text-decoration: underline;
+    text-decoration-color: #068067;
+}
+
+.articles-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+}
+
+/* Article Card Styling */
+.article-card2 {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+}
+
+.article-card2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.article-link2 {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.article-image2 {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.article-content2 {
+    padding: 15px;
+}
+
+.article-title2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.article-description2 {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.read-more2 {
+    font-size: 0.9rem;
+    color: #007bff;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.read-more2:hover {
+    color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .article-card2 {
+        width: 100%;
+    }
+}
+   
+   </style>
+</head>
+<body class="index-page">
+  <main class="main">
+    <form id="form1" runat="server">
+        <div>
+
+            
+            <header id="header" class="header d-flex align-items-center fixed-top">
+                <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+                  <a href="/Home.html#hero" class="logo d-flex align-items-center me-auto">
+                    <img src="assets/img/Tatenda3.png" alt="Tatenda Muchiriri Logo" class="logo-image">
+                  </a>
+
+                  <nav id="navmenu" class="navmenu">
+                    <ul>
+                      <li><a href="About.html" class="active">ABOUT</a></li>
+                      <li><a href="Services.html">SERVICES</a></li>
+                      <li><a href="Speaking.html">SPEAKING</a></li>
+                      <li><a href="Books.html">BOOKS</a></li>
+                      <li><a href="Blog.html">BLOG</a></li>
+                      <li class="dropdown"><a href="Resources.html"><span>RESOURCES</span></a>
+           
+                      </li>
+                      <li><a href="/Home.html#contact">CONTACT</a></li>
+                    </ul>
+                    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+                  </nav>
+
+                  <!--<a class="btn-getstarted" href="index.html#about">Get Started</a> -->
+
+                </div>
+              </header>
+          <!-- Starter Section Section -->
+    <section id="starter-section" class="starter-section section" style="background-image: url('assets/img/motif2.jpg'); ">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 style="font-size: 75px; font-weight:700; color: #3d2e24;">useful</h2>
+          <h1 style="font-size: 40px; font-weight:700; color: #3d2e24;">resources</h1>
+        </div><!-- End Section Title -->
+
+     
+    </section><!-- /Starter Section Section -->
+
+
+       <section class="video-carousel1">
+        <div class="carousel-container1">
+            <div class="carousel-track1">
+                <!-- Slide 1 -->
+                <div class="carousel-slide1">
+                    <div class="video-card1">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Tpcr5ZY-tq8?si=ut1fKKWNNMz6WlvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  <div class="video-details1">
+                            <h3>Video Title 1</h3>
+                            <p>Short description about the video content.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-slide1">
+                    <div class="video-card1">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Tpcr5ZY-tq8?si=ut1fKKWNNMz6WlvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  <div class="play-button1"><i class="bi bi-play-circle-fill"></i></div>
+                        <div class="video-details1">
+                            <h3>Video Title 2</h3>
+                            <p>Short description about the video content.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-slide1">
+                    <div class="video-card1">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Tpcr5ZY-tq8?si=ut1fKKWNNMz6WlvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  <div class="play-button1"><i class="bi bi-play-circle-fill"></i></div>
+                        <div class="video-details1">
+                            <h3>Video Title 3</h3>
+                            <p>Short description about the video content.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more slides as needed -->
+            </div>
+            <!-- Navigation Arrows -->
+            <button class="carousel-arrow1 prev1" aria-label="Previous Slide">&#10094;</button>
+            <button class="carousel-arrow1 next1" aria-label="Next Slide">&#10095;</button>
+            <!-- Navigation Dots -->
+            <div class="carousel-dots1">
+                <span class="dot1 active1" data-index="0"></span>
+                <span class="dot1" data-index="1"></span>
+                <span class="dot1" data-index="2"></span>
+                <!-- Add more dots as needed -->
+            </div>
+        </div>
+    </section>
+
+     <section class="articles-section2">
+        <h2 class="section-title2">Useful Articles</h2>
+        <div class="articles-container2">
+            <!-- Article Card 1 -->
+            <div class="article-card2">
+                <a href="https://example.com/article1" target="_blank" class="article-link2">
+                    <img src="assets/img/article1.jpg" alt="Article Image" class="article-image2">
+                    <div class="article-content2">
+                        <h3 class="article-title2">How to Master Time Management</h3>
+                        <p class="article-description2">Learn effective strategies to manage your time and boost productivity.</p>
+                        <span  class="whimsical-button">Read More →</span>
+                    </div>
+                </a>
+            </div>
+            <!-- Article Card 2 -->
+            <div class="article-card2">
+                <a href="https://example.com/article2" target="_blank" class="article-link2">
+                    <img src="assets/img/article1.jpg" alt="Article Image" class="article-image2">
+                    <div class="article-content2">
+                        <h3 class="article-title2">The Art of Mindfulness</h3>
+                        <p class="article-description2">Discover how mindfulness can improve your mental well-being.</p>
+                        <span class="whimsical-button">Read More →</span>
+                    </div>
+                </a>
+            </div>
+            <!-- Article Card 3 -->
+            <div class="article-card2">
+                <a href="https://example.com/article3" target="_blank" class="article-link2">
+                    <img src="assets/img/article1.jpg" alt="Article Image" class="article-image2">
+                    <div class="article-content2">
+                        <h3 class="article-title2">Top Tips for Remote Work</h3>
+                        <p class="article-description2">Find out how to stay productive while working from home.</p>
+                        <span  class="whimsical-button"">Read More →</span>
+                    </div>
+                </a>
+            </div>
+            <!-- Add more article cards as needed -->
+              <!-- Article Card 3 -->
+            <div class="article-card2">
+                <a href="https://example.com/article3" target="_blank" class="article-link2">
+                    <img src="assets/img/article1.jpg" alt="Article Image" class="article-image2">
+                    <div class="article-content2">
+                        <h3 class="article-title2">Top Tips for Remote Work</h3>
+                        <p class="article-description2">Find out how to stay productive while working from home.</p>
+                        <span  class="whimsical-button">Read More →</span>
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+    </section>
+
+   
+
+
+   
+             <footer id="footer" class="footer position-relative light-background" style="background-color: #b24b22;color: white;" >
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename" style="color:white;">TatendaMuchiriri</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links" style="color:white;">
+          <h4 style="color:white;">Useful Links</h4>
+          <ul>
+            <li><a href="#" style="color:white;">Home</a></li>
+            <li><a href="#" style="color:white;">About</a></li>
+            <li><a href="#" style="color:white;">Services</a></li>
+           
+          </ul>
+        </div>
+
+        <!--<div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div> -->
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4 style="color:white;">Our Newsletter</h4>
+          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">QuickStart</strong><span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Dist<a href="https://themewagon.com">ThemeWagon
+      </div>
+    </div>
+
+  </footer>
+   <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+ <script src="assets/js/resources.js"></script>
+
+ 
+ <script>
+  document.addEventListener("DOMContentLoaded", () => {
+      const track = document.querySelector(".carousel-track1");
+      const slides = Array.from(document.querySelectorAll(".carousel-slide1"));
+      const dots = Array.from(document.querySelectorAll(".dot1"));
+      const prevButton = document.querySelector(".prev1");
+      const nextButton = document.querySelector(".next1");
+  
+      let currentIndex = 0;
+  
+      // Update Carousel Position
+      function updateCarousel(index) {
+          const slideWidth = slides[0].offsetWidth + 20; // Include margin
+          track.style.transform = `translateX(-${index * slideWidth}px)`;
+          dots.forEach((dot, i) => dot.classList.toggle("active1", i === index));
+      }
+  
+      // Handle Dot Clicks
+      dots.forEach((dot, index) => {
+          dot.addEventListener("click", () => {
+              currentIndex = index;
+              updateCarousel(currentIndex);
+          });
+      });
+  
+      // Handle Previous Button
+      prevButton.addEventListener("click", () => {
+          currentIndex = (currentIndex > 0) ? currentIndex - 1 : slides.length - 1;
+          updateCarousel(currentIndex);
+      });
+  
+      // Handle Next Button
+      nextButton.addEventListener("click", () => {
+          currentIndex = (currentIndex < slides.length - 1) ? currentIndex + 1 : 0;
+          updateCarousel(currentIndex);
+      });
+  
+      // Initialize First Slide
+      updateCarousel(currentIndex);
+  });
+          </script>    <script>
+  document.addEventListener("DOMContentLoaded", () => {
+      const track = document.querySelector(".carousel-track1");
+      const slides = Array.from(document.querySelectorAll(".carousel-slide1"));
+      const dots = Array.from(document.querySelectorAll(".dot1"));
+      const prevButton = document.querySelector(".prev1");
+      const nextButton = document.querySelector(".next1");
+  
+      let currentIndex = 0;
+  
+      // Update Carousel Position
+      function updateCarousel(index) {
+          const slideWidth = slides[0].offsetWidth + 20; // Include margin
+          track.style.transform = `translateX(-${index * slideWidth}px)`;
+          dots.forEach((dot, i) => dot.classList.toggle("active1", i === index));
+      }
+  
+      // Handle Dot Clicks
+      dots.forEach((dot, index) => {
+          dot.addEventListener("click", () => {
+              currentIndex = index;
+              updateCarousel(currentIndex);
+          });
+      });
+  
+      // Handle Previous Button
+      prevButton.addEventListener("click", () => {
+          currentIndex = (currentIndex > 0) ? currentIndex - 1 : slides.length - 1;
+          updateCarousel(currentIndex);
+      });
+  
+      // Handle Next Button
+      nextButton.addEventListener("click", () => {
+          currentIndex = (currentIndex < slides.length - 1) ? currentIndex + 1 : 0;
+          updateCarousel(currentIndex);
+      });
+  
+      // Initialize First Slide
+      updateCarousel(currentIndex);
+  });
+          </script>
+  
+
+        </div>
+    </form>
+  </main>
+</body>
+</html>

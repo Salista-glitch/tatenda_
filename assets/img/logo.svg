@@ -1,0 +1,15 @@
+<svg width="350" height="100" viewBox="0 0 350 100" xmlns="http://www.w3.org/2000/svg">
+    <!-- Highlight Bar -->
+    <rect x="5" y="55" width="350" height="20" fill="#f8cba9" rx="5"/>
+
+    <!-- "Tatenda" in cursive -->
+    <text x="10" y="60" font-family="Lobster, cursive" font-size="42" font-weight="700" fill="#222">
+        tatenda
+    </text>
+
+    <!-- "Muchiriri" in bold sans-serif, positioned closer -->
+    <text x="175" y="60" font-family="Poppins, sans-serif" font-size="40" font-weight="600" fill="#222">
+        muchiriri
+    </text>
+</svg>
+

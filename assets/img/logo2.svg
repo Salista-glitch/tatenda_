@@ -1,0 +1,17 @@
+<svg width="400" height="100" viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="100" fill="#f8f4e9" />
+
+  <!-- First Name: Tatenda (Handwritten Style) -->
+  <text x="50%" y="55" text-anchor="middle" font-family="Pacifico, cursive" font-size="48" fill="#2c9e93">
+    Tatenda
+  </text>
+
+  <!-- Last Name: Muchiriri (Sans-Serif Style) -->
+  <text x="65%" y="55" text-anchor="start" font-family="Roboto, sans-serif" font-size="24" fill="#808080">
+    Muchiriri
+  </text>
+
+  <!-- Horizontal Line (Decorative Element) -->
+  <line x1="0" y1="50" x2="400" y2="50" stroke="#f7b731" stroke-width="2" />
+</svg>
